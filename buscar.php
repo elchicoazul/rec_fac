@@ -228,4 +228,4 @@ const llenarSelectConDispositivosDisponibles = () => {
 			}
 		}
 	</style>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
