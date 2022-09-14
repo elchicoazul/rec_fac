@@ -1,4 +1,9 @@
 <?php
+$imageAnnotator = new ImageAnnotatorClient(
+    [
+        'credentials' => 'key.json'
+    ]
+);
 $path = "https://img.freepik.com/vector-gratis/conjunto-muebles-hogar_74855-15461.jpg?w=2000";
  $image = file_get_contents($path);
  //$image= fopen($_FILES['image']['tmp_name'],'r');

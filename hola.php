@@ -1,7 +1,7 @@
 <?php
 $imageAnnotator = new ImageAnnotatorClient(
     [
-        'credentials' => 'app/Views/key.json'
+        'credentials' => 'key.json'
     ]
 );
 $path = "https://img.freepik.com/vector-gratis/conjunto-muebles-hogar_74855-15461.jpg?w=2000";
