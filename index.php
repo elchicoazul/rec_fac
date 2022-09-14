@@ -1,4 +1,8 @@
 <?php
+require_once './vendor/autoload.php';
+use Google\Cloud\Vision\V1\ImageAnnotatorClient;
+use Google\Cloud\Vision\V1\Feature\Type;
+use Google\Cloud\Vision\V1\Likelihood;
 $imageAnnotator = new ImageAnnotatorClient(
     [
         'credentials' => 'key.json'
