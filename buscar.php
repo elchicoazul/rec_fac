@@ -60,7 +60,7 @@ $seleccionArchivos.addEventListener("change", () => {
   $imagenPrevisualizacion.src = objectURL;
   var imagenes = document.getElementById("seleccionArchivos").files[0].name;
   
-  $("#notificaciones").load("https://molten-unison-362119.ue.r.appspot.com/");
+  $("#notificaciones").load("/");
   
 });
 </script>
