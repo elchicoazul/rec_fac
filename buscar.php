@@ -60,7 +60,7 @@ $seleccionArchivos.addEventListener("change", () => {
   $imagenPrevisualizacion.src = objectURL;
   var imagenes = document.getElementById("seleccionArchivos").files[0].name;
   
-  $("#notificaciones").load("<?php echo base_url() . '/foto/'?>"+ imagenes);
+  
   
 });
 </script>
@@ -193,7 +193,7 @@ const llenarSelectConDispositivosDisponibles = () => {
  
 					let foto = $canvas.toDataURL(); //Esta es la foto, en base 64
 					$estado.innerHTML = "Enviando foto. Por favor, espera...";
-					fetch("<?php echo base_url() . '/guardar_imagen'?>", {
+					fetch("/guardar_imagen", {
 						method: "POST",
 						body: encodeURIComponent(foto),
 						headers: {
@@ -207,7 +207,7 @@ const llenarSelectConDispositivosDisponibles = () => {
 						.then(nombreDeLaFoto => {
 							// nombreDeLaFoto trae el nombre de la imagen que le dio PHP
 							console.log("La foto fue enviada correctamente");
-              $("#notasimg").load("<?php echo base_url() . '/fotoimg/'?>"+ nombreDeLaFoto);
+              $("#notasimg").load("nombreDeLaFoto");
 							$estado.innerHTML = `Foto guardada con éxito. Puedes verla <a target='_blank' href='./${nombreDeLaFoto}'> aquí</a>`;
 						})
  
