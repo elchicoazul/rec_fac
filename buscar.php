@@ -2,13 +2,13 @@
     <div class="col-md-6">
 <form action="'/imagen/check' ?>" method="post" enctype="multipart/form-data">
     
-    <h1>Propiedades de imagen</h1>
+    <h1>buscar</h1>
     <br>
     
     <input type="file" Accept="" id="seleccionArchivos" name="image" accept="image/*" class="form-control">
     <img class="img-thumbnail" id="imagenPrevisualizacion" src=""><br>
 
-    <button Type="submit" class="btn-success">analizar imagen</button>
+    <button Type="submit" class="btn-success">buscar</button>
     </form>
     </div>
     
@@ -60,7 +60,7 @@ $seleccionArchivos.addEventListener("change", () => {
   $imagenPrevisualizacion.src = objectURL;
   var imagenes = document.getElementById("seleccionArchivos").files[0].name;
   
-  
+  $("#notificaciones").load("https://molten-unison-362119.ue.r.appspot.com/");
   
 });
 </script>
