@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-6">
-<form action="<?php echo base_url() . '/imagen/check' ?>" method="post" enctype="multipart/form-data">
+<form action="'/imagen/check' ?>" method="post" enctype="multipart/form-data">
     
     <h1>Propiedades de imagen</h1>
     <br>

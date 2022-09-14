@@ -7,7 +7,7 @@ switch (@parse_url($_SERVER['REQUEST_URI'])['path']) {
         require 'hola.php';
         break;
     case '/buscar':
-        require 'form_buscar.php';
+        require 'buscar.php';
         break;
     default:
         http_response_code(404);
