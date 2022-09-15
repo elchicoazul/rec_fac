@@ -4,9 +4,9 @@ use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 use Google\Cloud\Vision\V1\Feature\Type;
 use Google\Cloud\Vision\V1\Likelihood;
 use Google\Cloud\Translate\V2\TranslateClient;
-
+$count=0;
 $translate = new TranslateClient([
-    'key' => 'key.json'
+    'key' => 'AIzaSyCqHFKVJAgIQEkmwCmCaJZjIk8nZZKPI_A'
 ]);
 $imageAnnotator = new ImageAnnotatorClient(
     [
@@ -29,10 +29,8 @@ $path = "https://img.freepik.com/vector-gratis/conjunto-muebles-hogar_74855-1546
         'target' => 'es'
     ]);
     echo $result['text'];
-    $result = $translate->translate($score, [
-        'target' => 'es'
-    ]);
-    echo $result['text'];
+    
+    
     
      print('normalized bounding polygon vertices: ');
      foreach ($vertices as $vertex) {
