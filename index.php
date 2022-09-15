@@ -4,12 +4,13 @@ use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 use Google\Cloud\Vision\V1\Feature\Type;
 use Google\Cloud\Vision\V1\Likelihood;
 $count=0;
+$url=$_POST["value"];
 $imageAnnotator = new ImageAnnotatorClient(
     [
         'credentials' => 'key.json'
     ]
 );
-$path = "https://img.freepik.com/vector-gratis/conjunto-muebles-hogar_74855-15461.jpg?w=2000";
+$path = $url;
  $image = file_get_contents($path);
  //$image= fopen($_FILES['image']['tmp_name'],'r');
  $response = $imageAnnotator->objectLocalization($image);
