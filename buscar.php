@@ -63,7 +63,7 @@ $seleccionArchivos.addEventListener("change", () => {
   $imagenPrevisualizacion.src = objectURL;
   var imagenes = document.getElementById("seleccionArchivos").files[0].name;
   
-  $("#notificaciones").load("/");
+  $("#notificaciones").load("https://us-central1-molten-unison-362119.cloudfunctions.net/reconocer-imagen");
   
 });
 </script>
