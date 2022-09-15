@@ -196,7 +196,7 @@ const llenarSelectConDispositivosDisponibles = () => {
  
 					let foto = $canvas.toDataURL(); //Esta es la foto, en base 64
 					$estado.innerHTML = "Enviando foto. Por favor, espera...";
-					fetch("/guardar_imagen", {
+					fetch("/proceso", {
 						method: "POST",
 						body: encodeURIComponent(foto),
 						headers: {
@@ -210,7 +210,7 @@ const llenarSelectConDispositivosDisponibles = () => {
 						.then(nombreDeLaFoto => {
 							// nombreDeLaFoto trae el nombre de la imagen que le dio PHP
 							console.log("La foto fue enviada correctamente");
-              $("#notasimg").load("nombreDeLaFoto");
+              $("#notasimg").load("/");
 							$estado.innerHTML = `Foto guardada con éxito. Puedes verla <a target='_blank' href='./${nombreDeLaFoto}'> aquí</a>`;
 						})
  
