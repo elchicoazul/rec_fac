@@ -1,3 +1,4 @@
+<h1>Resultados de la imagen</h1>
 <?php
 require_once './vendor/autoload.php';
 use Google\Cloud\Vision\V1\ImageAnnotatorClient;
