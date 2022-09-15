@@ -9,7 +9,7 @@ $imageAnnotator = new ImageAnnotatorClient(
         'credentials' => 'key.json'
     ]
 );
-$path = "https://img.freepik.com/vector-gratis/conjunto-muebles-hogar_74855-15461.jpg?w=2000";
+$path = "https://sirve-362603.uc.r.appspot.com/foto_632388606d571.png";
  $image = file_get_contents($path);
  //$image= fopen($_FILES['image']['tmp_name'],'r');
  $response = $imageAnnotator->objectLocalization($image);
