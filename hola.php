@@ -3,6 +3,11 @@ require_once './vendor/autoload.php';
 use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 use Google\Cloud\Vision\V1\Feature\Type;
 use Google\Cloud\Vision\V1\Likelihood;
+use Google\Cloud\Translate\V2\TranslateClient;
+
+$translate = new TranslateClient([
+    'key' => 'key.json'
+]);
 $imageAnnotator = new ImageAnnotatorClient(
     [
         'credentials' => 'key.json'
@@ -20,7 +25,15 @@ $path = "https://img.freepik.com/vector-gratis/conjunto-muebles-hogar_74855-1546
      $score = $object->getScore();
      $vertices = $object->getBoundingPoly()->getNormalizedVertices();
      echo $count++;
-     printf('%s (confidence %f)):' . PHP_EOL, $name, $score);
+     $result = $translate->translate($name, [
+        'target' => 'es'
+    ]);
+    echo $result['text'];
+    $result = $translate->translate($score, [
+        'target' => 'es'
+    ]);
+    echo $result['text'];
+    
      print('normalized bounding polygon vertices: ');
      foreach ($vertices as $vertex) {
          printf(' (%f, %f)', $vertex->getX(), $vertex->getY());

@@ -39,6 +39,7 @@ class ComposerStaticInit9f52ab1589a16e57f9e3d8b9abf4266c
             'Google\\Protobuf\\' => 16,
             'Google\\LongRunning\\' => 19,
             'Google\\Cloud\\Vision\\' => 20,
+            'Google\\Cloud\\Translate\\' => 23,
             'Google\\Cloud\\Core\\' => 18,
             'Google\\Auth\\' => 12,
             'Google\\ApiCore\\LongRunning\\' => 27,
@@ -47,6 +48,7 @@ class ComposerStaticInit9f52ab1589a16e57f9e3d8b9abf4266c
             'GPBMetadata\\Google\\Protobuf\\' => 28,
             'GPBMetadata\\Google\\Longrunning\\' => 31,
             'GPBMetadata\\Google\\Cloud\\Vision\\' => 32,
+            'GPBMetadata\\Google\\Cloud\\Translate\\' => 35,
             'GPBMetadata\\Google\\' => 19,
             'GPBMetadata\\ApiCore\\' => 20,
         ),
@@ -67,8 +69,8 @@ class ComposerStaticInit9f52ab1589a16e57f9e3d8b9abf4266c
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -114,6 +116,10 @@ class ComposerStaticInit9f52ab1589a16e57f9e3d8b9abf4266c
         array (
             0 => __DIR__ . '/..' . '/google/cloud-vision/src',
         ),
+        'Google\\Cloud\\Translate\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/cloud-translate/src',
+        ),
         'Google\\Cloud\\Core\\' => 
         array (
             0 => __DIR__ . '/..' . '/google/cloud-core/src',
@@ -145,6 +151,10 @@ class ComposerStaticInit9f52ab1589a16e57f9e3d8b9abf4266c
         'GPBMetadata\\Google\\Cloud\\Vision\\' => 
         array (
             0 => __DIR__ . '/..' . '/google/cloud-vision/metadata',
+        ),
+        'GPBMetadata\\Google\\Cloud\\Translate\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/cloud-translate/metadata',
         ),
         'GPBMetadata\\Google\\' => 
         array (
